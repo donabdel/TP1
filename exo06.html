@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exo06 - Formulaire de contact</title>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+<main id="main">
+
+<h1>Contact</h1>
+<form action="#" method="post">
+  <p>
+    <label for="nom">Nom&nbsp;*</label><br />
+    <input id="nom" name="nom" type="text" required placeholder="Votre nom" />
+  </p>
+  <p>
+    <label for="email">Email&nbsp;*</label><br />
+    <input id="email" name="email" type="email" required placeholder="exemple@domaine.com" />
+  </p>
+  <p>
+    <label for="sujet">Sujet</label><br />
+    <input id="sujet" name="sujet" type="text" maxlength="60" placeholder="Sujet (max 60 caractères)" />
+  </p>
+  <p>
+    <label for="message">Message</label><br />
+    <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+  </p>
+  <p><button type="submit">Envoyer</button></p>
+</form>
+
+</main>
+</body>
+</html>

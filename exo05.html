@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exo05 - Tableaux</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <main id="main">
+
+    <h1>Inventaire</h1>
+    <table border="1">
+      <caption>Inventaire boutique</caption>
+      <thead>
+        <tr>
+          <th scope="col">Produit</th>
+          <th scope="col">Catégorie</th>
+          <th scope="col">Prix (€)</th>
+          <th scope="col">Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Laptop A</td>
+          <td>Informatique</td>
+          <td>799</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Souris B</td>
+          <td rowspan="2">Accessoires</td>
+          <td>19</td>
+          <td>57</td>
+        </tr>
+        <tr>
+          <td>Clavier D</td>
+          <td>39</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Écran C</td>
+          <td>Informatique</td>
+          <td>189</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total articles distincts&nbsp;: 4</td>
+        </tr>
+      </tfoot>
+    </table>
+
+  </main>
+</body>
+
+</html>

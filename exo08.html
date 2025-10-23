@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exo08 - Mise en page sémantique</title>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+<main id="main">
+
+<header>
+  <img src="img/logo.svg" alt="Logo du site" width="100" />
+  <h1>Mini‑Blog</h1>
+  <nav aria-label="Navigation principale">
+    <a href="#accueil">Accueil</a> | 
+    <a href="#articles">Articles</a> | 
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil">
+  <h2>Bienvenue</h2>
+  <p>Exemple de gabarit sémantique avec en‑tête, nav, main, articles, aside et pied de page.</p>
+</section>
+
+<main id="articles">
+  <article>
+    <h2>Article 1</h2>
+    <time datetime="2025-09-01">1 septembre 2025</time>
+    <p>Un court paragraphe d’introduction au premier article. <a href="#" title="Lire plus">Lire plus</a></p>
+  </article>
+  <article>
+    <h2>Article 2</h2>
+    <time datetime="2025-09-15">15 septembre 2025</time>
+    <p>Un autre paragraphe introductif. <a href="#" title="Lire plus">Lire plus</a></p>
+  </article>
+</main>
+
+<aside aria-label="À propos">
+  <h2>À propos</h2>
+  <p>Ce mini‑blog est un gabarit pédagogique pour s’entraîner à la sémantique HTML.</p>
+</aside>
+
+<footer id="contact">
+  <p>Mentions légales — &copy; 2025</p>
+</footer>
+
+</main>
+</body>
+</html>

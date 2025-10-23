@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exo09 - Accessibilité & médias</title>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+<main id="main">
+
+<h1>Accessibilité &amp; Médias</h1>
+
+<p>
+  <a href="#media" tabindex="0">Aller au bloc médias</a>
+</p>
+
+<figure>
+  <img src="img/logo.svg" alt="Logo stylisé bleu avec le texte TP HTML" width="160" />
+  <figcaption>Figure 1&nbsp;: Logo du TP utilisé comme illustration.</figcaption>
+</figure>
+
+<section id="media" tabindex="0">
+  <h2>Audio</h2>
+  <audio controls>
+    <!-- Fichier audio local non fourni : utiliser un .mp3 ou .ogg libre si disponible -->
+    Votre navigateur ne peut pas lire l’audio ou le fichier est manquant.
+  </audio>
+
+  <h2>Vidéo</h2>
+  <video controls width="320">
+    <!-- Fichier vidéo local non fourni : utiliser un .mp4 ou .webm libre si disponible -->
+    Votre navigateur ne peut pas lire la vidéo ou le fichier est manquant.
+  </video>
+</section>
+
+<form>
+  <p>
+    <label for="champ1">Exemple de champ accessible</label><br />
+    <input id="champ1" name="champ1" type="text" placeholder="Saisir un texte" tabindex="0" />
+  </p>
+  <p>
+    <button type="submit" tabindex="0">Valider</button>
+  </p>
+</form>
+
+</main>
+</body>
+</html>

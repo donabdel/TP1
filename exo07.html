@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exo07 - Formulaire d’inscription avancé</title>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+<main id="main">
+
+<h1>Créer un compte</h1>
+<form action="#" method="post" oninput="confirm_password.setCustomValidity(confirm_password.value !== password.value ? 'Les mots de passe diffèrent' : '')">
+  <fieldset>
+    <legend>Identité</legend>
+    <p>
+      <label for="nom2">Nom&nbsp;*</label><br />
+      <input id="nom2" name="nom2" type="text" required />
+    </p>
+    <p>
+      <label for="prenom2">Prénom&nbsp;*</label><br />
+      <input id="prenom2" name="prenom2" type="text" required />
+    </p>
+    <p>
+      <label for="naissance">Date de naissance</label><br />
+      <input id="naissance" name="naissance" type="date" min="1900-01-01" max="2025-10-07" />
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact</legend>
+    <p>
+      <label for="tel">Téléphone</label><br />
+      <input id="tel" name="tel" type="tel" pattern="^0[5-7]\d{8}$" title="Format marocain attendu : 0[5-7] suivi de 8 chiffres" placeholder="06XXXXXXXX" />
+    </p>
+    <p>
+      <label for="site">Site personnel</label><br />
+      <input id="site" name="site" type="url" placeholder="https://exemple.com" />
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Sécurité</legend>
+    <p>
+      <label for="password">Mot de passe&nbsp;*</label><br />
+      <input id="password" name="password" type="password" minlength="8" required />
+    </p>
+    <p>
+      <label for="confirm_password">Confirmer le mot de passe&nbsp;*</label><br />
+      <input id="confirm_password" name="confirm_password" type="password" minlength="8" required />
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Préférences</legend>
+    <p>
+      <input id="newsletter" name="newsletter" type="checkbox" />
+      <label for="newsletter">S’abonner à la newsletter</label>
+    </p>
+    <p>
+      Rôle&nbsp;:
+      <input id="role-etud" name="role" type="radio" value="etudiant" />
+      <label for="role-etud">Étudiant</label>
+      <input id="role-pro" name="role" type="radio" value="pro" />
+      <label for="role-pro">Pro</label>
+    </p>
+  </fieldset>
+
+  <p><button type="submit">Créer le compte</button></p>
+</form>
+
+</main>
+</body>
+</html>
