@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-labelledby="title desc">
+  <title id="title">Logo TP HTML</title>
+  <desc id="desc">Simple rectangle with text for logo placeholder</desc>
+  <rect x="2" y="2" width="236" height="76" rx="12" ry="12" fill="#e6f0ff" stroke="#1f6feb" stroke-width="3"/>
+  <text x="120" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="middle" fill="#1f6feb">TP HTML</text>
+</svg>
